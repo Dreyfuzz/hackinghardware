@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Get Hacking with Arduino!</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <link rel="stylesheet" href="styles.css">
+    <base target="_blank">
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#home">Get Hacking with Arduino!</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="#examples">Examples<span class="sr-only">(current)</span></a></li>
+              <li><a href="#getstarted">Get Started</a></li>
+              <li><a href="#breadboard">Breadboard</a></li>
+              <li><a href="#exercises">Exercises</a></li>
+              <li><a href="#engineering">Engineering</a></li>
+              <li><a href="#resources">Resources</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+      <a name="home"></a>
+      <div class="jumbotron">
+        <h1>Get Hacking with Arduino!</h1>
+        <p>Arduino is an open-source electronics platform based on easy-to-use hardware and software. It's intended for anyone making interactive projects. There are <a href="https://www.arduino.cc/en/Main/Products">lots of different kinds of Arduinos</a>, some big, some small, with different special cababilities and uses! It's a great way to introduce kids to circuits, electronics, engineering, and programming!</p>
+
+        <p><a href="https://www.eventbrite.com/e/stem-edtech-symposium-tickets-19524159286">Welcome to the STEM and EdTech Symposium!</a></p>
+
+        <!-- contact info here -->
+        <p class="clear">Michael Dreyfus-Pai |
+          <!-- <a href="mailto:&#109;&#105;&#099;&#104;&#097;&#101;&#108;&#064;&#100;&#114;&#101;&#121;&#102;&#046;&#117;&#115;">&#109;&#105;&#099;&#104;&#097;&#101;&#108;&#064;&#100;&#114;&#101;&#121;&#102;&#046;&#117;&#115; </a>| -->
+           <a href="http://twitter.com/mdreyfus">@mdreyfus</a><br/>Director of Educational Technology | Catholic Schools Diocese of Oakland</p>
+      </div>
+      <img src="http://farmingtonlibraries.org/wp-content/uploads/2015/06/arduino_transparent.png" alt="Arduino Uno" class="img-responsive center">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <i class="glyphicon glyphicon-flash fa-4x"></i>
+            <h2>Electronics</h2>
+            <p>Building things with Arduino teaches electronics foundations! Concepts like circuits, power, grounding, voltage, resistance, serial and parallel become clear with Arduino.</p>
+          </div>
+          <div class="col-md-4">
+            <i class="fa fa-laptop fa-4x"></i>
+            <h2>Programming</h2>
+            <p>Arduinos run programs. Using built-in examples, novices learn to "grok" the code. By changing some values, they learn how to make the hardware change speed, color, and more.</p>
+          </div>
+          <div class="col-md-4">
+            <i class="glyphicon glyphicon-wrench fa-4x" aria-hidden="true"></i>
+            <h2>Engineering</h2>
+            <p>After they learn the basics from examples, kids can combine code and circuits to build their own electronic creations!</p>
+          </div>
+        </div>
+      </div>
+
+      <a name="examples"></a><h1>Awesome Arduino Projects</h1></a>
+
+      <!-- Carousel
+      ================================================== -->
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img class="first-slide" src="http://cdn.instructables.com/FDU/WON7/G1BB3QHT/FDUWON7G1BB3QHT.MEDIUM.jpg" alt="First slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <p><a class="btn btn-lg btn-primary" href="https://www.youtube.com/watch?v=GpKBXUxfMPI&list=PLgkaYIK4xu-_-3sqYeX1hS_NDGVmn6xEU&index=1" role="button" >Check it out</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img class="second-slide" src="images/tie.jpg" alt="Second slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>LED Ampli-Tie</h1>
+                <p>Neckware that lights up with noise.</p>
+                <p><a class="btn btn-lg btn-primary" href="https://www.youtube.com/watch?v=7FbK4wA7hjc" role="button" >Check it out</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img class="third-slide" src="images/robot.png" alt="Third slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Student Cardboard Robot</h1>
+                <p><a class="btn btn-lg btn-primary" href="https://photos.google.com/search/_tv_/photo/AF1QipOf-Gugp9EBsRV9tKMsqbrIc0RhAbqOhygT7nFs" role="button" >Check it out</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div><!-- /.carousel -->
+
+      <a name="getstarted"></a><h1>Getting Started</h1>
+      <img src="images/nano.png" alt="Arduino Nano" class="right">
+      <h2>Software</h2>
+      <p>Download the <a href="https://www.arduino.cc/en/Main/Software">Arduino Software</a>. Chromebooks can use <a href="https://codebender.cc">Codebender</a> to write and load Arduino sketches, but they may not work with our cheap Nanos.<br/><br/>
+      The Arduino Nano we're using for this workshop needs a special driver. Please download, install it, and restart your computer.
+        <ul class="list-group downloads">
+          <li class="list-group-item downloads"><a href="http://www.wch.cn/downfile/65">Windows</a></li>
+          <li class="list-group-item"><a href="http://blog.sengotta.net/wp-content/uploads/2015/11/CH34x_Install.zip">Mac</a></li>
+          <li class="list-group-item"><a href="http://www.wch.cn/download/CH341SER_LINUX_ZIP.html">Linux</a></li>
+        </ul>
+      </p>
+      <h2>The Arduino Nano (clone)</h2>
+      <img class="right" src="http://i.stack.imgur.com/daCgS.jpg" alt="nano diagram">
+      <p>Here is a diagram of the device we're using in this workshop, a cheap clone of the Arduino Nano. They are small and great for permanent projects, but require a breadboard for prototyping. The <a href="https://www.arduino.cc/en/Main/ArduinoBoardUno">Arduino Uno</a> is probably the best device to learn on.</p>
+      <div class="bs-callout bs-callout-danger">
+        <h3 class="fun">Fun Ways to Kill an Arduino!</h3>
+        <ul class="fun">
+          <li>Change connections while powered</li>
+          <li>Connect power (5v or 3v) directly to ground</li>
+          <li>Connect power directly to a digital pin</li>
+          <li>Connect a digital pin directly to another digital pin</li>
+        </ul>
+        <p>Arduinos output electricity. Even though the amounts are safe for humans, they are enough to burn out the Arduino itself VERY QUICKLY. To keep them safe, unplug while changing connections and make sure all circuits pass through a component before returning to the Arduino.</p>
+      </div>
+
+      <div class="clear"></div>
+      <h2>Exercise 1: Blink</h2>
+      <p>Within the Arduino software, follow the path below to open up blink.</p>
+      <img src="images/blink.png" alt="Blink Path Screenshot">
+      <p>Plug in your Arduino Nano. A red light should turn on. Set the board, processor, and port as shown below. These will be different depending on the specific Arduino you purchase.</p>
+      <img src="images/board.png" alt="board">
+      <img src="images/processor.png" alt="processor">
+      <img src="images/port.png" alt="port">
+      <p>Click the upload button to send the code to the Arduino.</p>
+      <img src="images/upload.png" alt="upload">
+      <p>That's it! If the little green light is blinking, you just programmed an Arduino! If you're having trouble connecting to the Arduino or didn't bring a compatible computer, you can try the virtual electronics lab at <a href="https://123d.circuits.io/">123D Circuits</a>.</p>
+      <div class="bs-callout bs-callout-info">
+      <h3>Grok it!</h3>
+        <ul>
+          <li>What does the OUTPUT in <code>pinMode(13,OUTPUT)</code> mean? What would INPUT mean?</li>
+          <li>What happens if you change the number in either <code>delay(1000)</code>? (hint: it's 1000 milliseconds)</li>
+          <li>Can you add more lines of <code>delay()</code> and <code>pinMode()</code> to come up with a custom pattern?</li>
+        </ul>
+      </div>
+      <h2>Exercise 2: More Blink!</h2>
+      <p>The next step is to wire up an LED to pin 13 and blink that. Keep it wired an use it with the fade exercise!</p>
+      <img src="images/more_blink.jpg" alt="">
+      <div class="bs-callout bs-callout-info">
+        <h3>Grok it!</h3>
+          <ul>
+            <li>What happens if you change the number 13 to 8 (all three times)?</li>
+            <li>What does that number mean and how is needed to make the circuit work?</li>
+            <li>What happens if you change to a different resistor, or bypass it entirely?</li>
+            <li>Can you figure out how to wire another LED in parallel or series?</li>
+          </ul>
+      </div>
+      <a name="breadboard"></a><h1>Breadboarding</h1>
+      <p>The breadboard is an important tool in electronics. It's how everything gets connected without twisting wires or soldiering! Here's how breadboards work:</p>
+      <img src="images/breadboard.jpg" alt="breadboard">
+      <img src="images/breadboard_use.png" alt="breadboard use">
+      <p><a href="https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard">Click here for a more detailed explanation of breadboards</a></p>
+      <a name="exercises"></a><h1>Exercises</h1>
+      <p>The exercises below make use of Arduino's built-in examples and tutorials on <a href="arduino.cc">Arduino.cc</a>. I've chosen them out of a few dozen options as the most useful for illustrating key concepts.
+      <h2>Exercise 3: Fade</h2>
+      <p>Open the Fade example by going to File --> Examples --> Basics --> Fade. The tutorial is located at <a href="https://www.arduino.cc/en/Tutorial/Fading">https://www.arduino.cc/en/Tutorial/Fading</a></p>
+      <div class="bs-callout bs-callout-info">
+        <h3>Grok it!</h3>
+        <ul>
+          <li>What does <code>int led = 9;</code> do?</li>
+          <li>How could you make the fade happen faster?</li>
+        </ul>
+      </div>
+      <h2>Exercise 4: Button</h2>
+      <p>This is our first example of using an input. Open the button example by going to File --> Examples --> Digital --> Button. There's a link right in the sketch to <a href="https://www.arduino.cc/en/Tutorial/Button">https://www.arduino.cc/en/Tutorial/Button</a>.</p>
+      <div class="bs-callout bs-callout-info">
+        <h3>Grok it!</h3>
+        <ul>
+          <li>Can you make this work with an external LED?</li>
+          <li>This sketch has an OUTPUT and an INPUT. How are they different?</li>
+          <li>What if you wanted the light to stay on for some time after pushing the button? How could you do that?</li>
+        </ul>
+      </div>
+      <h2>Exercise 5: Tone Melody</h2>
+      <p>Super easy to wire but fun for students, this program plays a little tune. Great for getting kids into the spirit of messing with code to make different melodies.</p>
+      <div class="bs-callout bs-callout-info">
+        <h3>Grok it!</h3>
+        <ul>
+          <li>Try changing the notes in <code>int melody</code> and <code>in noteDurations</code> to make different tunes.</li>
+          <li>What happens when you hit the reset button on the Arduino?</li>
+        </ul>
+      </div>
+      <h2>Exercise 6: Servo</h2>
+      <p>A servo is a special type of motor. They can be used to move all kinds of things in a robotics project. Open the servo example by going to File --> Examples --> Servo --> Sweep. Use the link in the sketch to the tutorial. Hint: on our servos, brown is ground, red is power, and orange is control.</p>
+      <img src="images/servo.jpg" alt="servo">
+      <div class="bs-callout bs-callout-info">
+        <h3>Grok it!</h3>
+        <ul>
+          <li>Which part of the code is changing the position?</li>
+          <li>How could you make the sweep move faster?</li>
+          <li>What does <code>#include Servo.h</code> do?</li>
+        </ul>
+      </div>
+      <h2>Exercise 6: Switch Case</h2>
+      <p>This is good for learning how the Serial Monitor can interact between your computer and Arduino. Try it out by opening File --> Examples --> Control --> switchCase and using the tutorial link in the sketch.</p>
+      <h2>Exercise 7: RGB LED</h2>
+      <p>There's a whole world of Arduino tutorials outside of Arduino.cc! <a href="https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino---v32/experiment-3-driving-an-rgb-led">This tutorial from Sparkfun</a> shows you how to make a multi-color (red, green, blue) LED dance. It will walk you through the setup, provide the code, and explain a little bit, too.</p>
+
+      <a name="engineering"></a><h1>Robot Petting Zoo: your first "engineering" project</h1>
+      <p>The folks behind the <a href="http://www.hummingbirdkit.com/">Hummingbird Robotics kit</a> came up with an <a href="http://www.hummingbirdkit.com/learning/tutorials/example-robots">amazing, scaffoldable first robotics project</a>. By combining some very simple arduino skills with cardboard, glue, and color, you can build simple robots that light up, move, make noise, and respond to their environment.</p>
+      <img src="images/dragon.png" alt="dragon robot">
+      <p>This is a great way to get students going beyond copying someone else's project. As you can see, just building examples is a great learning experience, but it doesn't take a lot of creative thinking. Constructing a simple robot lets students use bits and pieces from examples to create something new, and totally theirs!</p>
+
+      <h2>Scaffolding</h2>
+      <p>When building these robots, it's best to use an order that lets students add components as they go. That way, every robot is finished, some just have more features than others.</p>
+      <ol>
+        <li>Get students to start by thinking about the movement. Setting up the servo is the hardest part, and will inform the shape the most.</li>
+        <li>Construct the body using cardboard, markers, construction paper, and hot glue. Teach kids to use the glue gun safely! Hot glue is best because nothing else dries as quickly with enough structural strength.</li>
+        <li>Add lights: Lights are easy to place anywhere as eyes, flames, sparkles, etc.</li>
+        <li>Add sound: The Hummingbird can play WAV files, but any Arduino can play tones to make noise.</li>
+        <li>Add inputs: add a photocell, rangefinder, Passive Infrared Sensor (PIR), or button to activate your outputs.</li>
+      </ol>
+      <div class="bs-callout bs-callout-warning">
+        <h3>Hummingbird Kit</h3>
+        <p>If you can get the funding, I highly recommend the Hummingbird kit. Not only does it add the ability to play audio and program using a visual, block-based language, but it also has integrated screw-in terminals to make connecting components simple and secure.</p>
+      </div>
+      <div class="jumbotron">
+        <a name="resources"></a><h1>Resources</h1>
+        <p>Here are some places where you can find amazing Arduinos, components, and tutorials!</p>
+        <table class="table table-responsive">
+          <tr>
+            <td>
+              <a href="https://arduino.cc">Arduino.cc</a>
+            </td>
+            <td>Home of the Arduino project</td>
+          </tr>
+          <tr>
+            <td><a href="http://www.instructables.com/tag/type-id/category-technology/channel-arduino/">Instructables</a></td><td> Crowd sourced tutorials from users around the world</td>
+          </tr>
+          <tr>
+            <td><a href="https://learn.sparkfun.com/">Sparkfun</a></td><td>Producers of awesome hardware and lessons</td>
+          </tr>
+          <tr>
+            <td><a href="https://learn.adafruit.com/">Adafruit</a></td><td>A great vendor with excellent tutorials</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://www.reddit.com/r/arduino">Reddit Arduino Sub</a>
+            </td>
+            <td>Community of makers sharing their projects, asking, and answering questions</td>
+          </tr>
+          <tr>
+            <td><a href="http://www.hummingbirdkit.com/">Hummingbird</a></td>
+            <td>Creators of the Hummingbird Arduino, Snap visual programming language for Arduino, and the Robot Petting Zoo project</td>
+          </tr>
+          <tr>
+            <td><a href="http://www.makeymakey.com/">Makey Makey</a></td>
+            <td>The Arduino-based controller. Build custom controls for games and projects, even without programming.</td>
+          </tr>
+          <tr>
+            <td><a href="http://makezine.com/category/technology/arduino/">Make Magazine</a></td>
+            <td>Cool project ideas and fun kits to build with</td>
+          </tr>
+          <tr>
+            <td><a href="http://www.amazon.com/Robotlinking-Learning-Prototype-Tutorial-Mega2560/dp/B00Q2JYOBE">RobotLinking Kit</a></td>
+            <td>Wonderful, cheap kit with enough components to keep you busy for years</td>
+          </tr>
+          <tr>
+            <td><a href="https://123d.circuits.io/">123D Circuits from Autodesk</a></td>
+            <td>Diagram and prototype circuits online for free! Test your Arduino designs before building, or use as a virtual lab when you're short on parts.</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://learn.sparkfun.com/tutorials/alternative-arduino-interfaces">Alternative Arduino Interfaces</a></td>
+            <td>The Arduino app isn't the only way to program and upload code to your device. <a href="https://codebender.cc/">Codebender</a> is web-based and runs on Chromebooks, <a href="https://learn.sparkfun.com/tutorials/alternative-arduino-interfaces/ardublock">ArduBlock</a> adds drag-and-drop programming, and <a href="http://www.modkit.com/micro">Modkit</a> is a kid-friendly visual interface.
+          </tr>
+          <tr>
+            <td colspan="2"><strong>Today's Parts List</strong></td>
+          </tr>
+          <tr><td></td><td><ul>
+              <li><a  href="http://www.ebay.com/itm/381019048475?_trksid=p2057872.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT">Cheap Arduino Nano</a></li>
+              <li><a  href="http://www.ebay.com/itm/New-Lot10-USB-2-0-A-Male-to-5pin-Mini-B-Dada-Power-Cable-FOR-Mp3-Mp4-Camera-50cm-/141350330254?hash=item20e922df8e:g:7TAAAOSwKPNTx5xV">USB Mini cable</a></li>
+              <li><a  href="http://www.ebay.com/itm/111379799211?_trksid=p2057872.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT">Half-Sized Breadboard</a></li>
+              <li><a  href="http://www.ebay.com/itm/271969010778?_trksid=p2057872.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT">Digital Micro Servo</a></li>
+              <li><a  href="http://www.ebay.com/itm/301762635280?_trksid=p2057872.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT">5 assorted LEDs</a></li>
+              <li><a  href="http://www.ebay.com/itm/64-values-1280-pcs-1ohm-10M-ohm-W-Metal-Film-Resistor-Resistors-Assortment-Kit-/321801231943?hash=item4aecd91e47:g:AeAAAOSwPhdVOj4D"> assorted resistors</a></li>
+              <li><a  href="http://www.ebay.com/itm/321873747257?_trksid=p2057872.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT">8 assorted jumper wires</a></li>
+              <li><a  href="http://www.ebay.com/itm/like/151434677948?ul_noapp=true&chn=ps&lpid=82">RGB LED</a></li>
+              <li><a  href="http://www.ebay.com/itm/Light-Sensor-Photocell-CDS-Lot-of-5-/191656353675?hash=item2c9f9bdf8b:g:9K0AAOSwyQtVxQkx">Photo Cell</a></li>
+              <li>Speaker (made from a broken headphone)</li>
+            </ul></td>
+          </tr>
+        </table>
+      </div>
+    </div><!-- container -->
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="scroll.js"></script>
+</html>
